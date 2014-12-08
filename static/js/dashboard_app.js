@@ -8,7 +8,7 @@ StandaloneDashboard(function(db){
 
 	kpi.addKPI('kpi_apk_analysed', {
 		caption: 'APKs Analysed',
-		value: 559
+		value: 0
 	});
 
 	myFirebaseRef.child("techeval/completions").on("value", function(snapshot) {
@@ -20,7 +20,7 @@ StandaloneDashboard(function(db){
 
 	kpi.addKPI('kpi_apk_queue', {
 		caption: 'APKs in Queue',
-		value: 507
+		value: 0
 	});
 
 	window.setInterval(function(kpi){
@@ -42,7 +42,7 @@ StandaloneDashboard(function(db){
 
 	kpi.addKPI('kpi_analysis_nodes', {
 		caption: 'Analysis Nodes',
-		value: 386
+		value: 0
 	});
 
 	myFirebaseRef.child("techeval/instances").on("value", function(snapshot) {
